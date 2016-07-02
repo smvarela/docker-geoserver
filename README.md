@@ -6,15 +6,18 @@ Docker image with Geoserver and print-plugin.
 - Oracle Java 8
 - Geoserver
      - Geoserver version 2.9.0
-     - Geoserver print-plugin
+     - Geoserver printing plugin
 
 ## Usage
 With this dockerfile you can build the image:
-
-$ docker build -f dockerfile.txt -t user/geoserver-master:test .
-
+```
+docker build -f dockerfile.txt -t user/geoserver-master:test .
+```
 Run the Docker image:
-$ docker run -it --net="host" user/geoserver-master:test
-
-And start Geoserver in the new Docker terminal:
-$ ./startup.sh
+```
+docker run -it --net="host" user/geoserver-master:test
+```
+Start Geoserver in the new Docker terminal:
+```
+./startup.sh
+```
